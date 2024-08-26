@@ -1,0 +1,62 @@
+/* Định dạng cơ bản */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Định dạng tiêu đề */
+.title {
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+}
+
+.title h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #da251d;
+    text-transform: uppercase;
+}
+
+/* Định dạng khung chứa lá cờ */
+.flags-container {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các hình ảnh */
+    margin-bottom: 20px; /* Khoảng cách giữa các hình ảnh và footer */
+}
+
+/* Định dạng từng lá cờ và bản đồ */
+.flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Đảm bảo toàn bộ hình ảnh được hiển thị */
+}
+
+/* Kích thước cho lá cờ hai bên */
+.flag.left, .flag.right {
+    width: 300px;
+    height: 200px;
+}
+
+/* Kích thước cho bản đồ ở giữa */
+.flag.middle {
+    width: 350px;
+    height: 233px;
+}
+
+/* Định dạng phần bản quyền */
+.footer {
+    margin-top: auto; /* Tự động đẩy phần này xuống dưới cùng */
+    font-size: 18px;
+    color: #333;
+    padding-bottom: 20px;
+}
